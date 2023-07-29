@@ -16,10 +16,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-image: url(../img/img_fondo.jpg);
+  --color_border : rgba(73, 81, 82, 0.349);
 }
 
 
   .container_todo{
+    border: 7px solid var(--color_border);
   background:#ffffff05;
   backdrop-filter: blur(10px)!important;
 }
@@ -42,7 +44,9 @@ h6,
 .font-heading {
   font-family: "Raleway", sans-serif;
 }
-
+.item{
+  /* border: 5px solid black; */
+}
 .section {
   padding: 7rem 0;
 }
@@ -50,6 +54,7 @@ h6,
 .filters a {
   text-decoration: none;
   color: #000;
+  font-family: 'Pacifico', cursive;
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
@@ -89,11 +94,10 @@ h6,
 
 .site-portfolio .container h2{
 text-align: center;
+font-family: 'Lobster', cursive;
+text-transform: uppercase;
 }
-.item {
-  border: none;
-  margin-bottom: 30px;
-}
+
 
 .item .item-wrap {
   display: block;
@@ -122,10 +126,11 @@ text-align: center;
 .work-info h3{
   font-weight: bold;
   font-size: 25px;
+  font-family: 'Lobster', cursive;
+  
 }
 .work-info{
   background-color: #6cd1c081;
-  
 }
 .item .item-wrap>.work-info {
   position: absolute;
@@ -146,9 +151,10 @@ text-align: center;
   margin-bottom: 0;
 }
 .work-info span{
-
-  color: #16262b;
-  font-weight: 1000;
+  font-family: 'Lobster', cursive;
+  color: #0b1416d7;
+  font-weight: 100;
+  opacity: 0.7;
 }
 
 .item .item-wrap>.work-info span {
@@ -158,8 +164,13 @@ text-align: center;
 }
 .credits{
   text-align: center;
+  color: rgb(7, 7, 7);
+  font-size: 15px;
 }
-
+.credits i{
+  text-transform: capitalize;
+  font-family: 'Pacifico', cursive;
+}
 /* .item .item-wrap:hover {
   text-decoration: none;
 } */
@@ -438,6 +449,14 @@ text-align: center;
  .section{
   padding: 20px;
  }
+ 
+ .item a{
+  
+  border-top: 5px solid var(--color_border);
+  border-left: 5px solid var(--color_border);
+  border-right: 5px solid var(--color_border);
+ }
+ 
   .container img{
     /* backdrop-filter: blur(10px); */
     display: block;
@@ -451,7 +470,9 @@ text-align: center;
   
   .work-info{
     padding-bottom: 12px;
-    padding-left: 20px;
+    border-left: 5px solid var(--color_border);
+    border-right: 5px solid var(--color_border);
+    border-bottom: 5px solid var(--color_border);
     opacity: 1;
     text-align: center;
   }
@@ -472,7 +493,7 @@ text-align: center;
   font-size: 45px;
   font-weight: 800;
   margin: auto;
-  color: #110606;
+  color: #ffffff;
   text-shadow: 0 0 5px #1ca386, 0 0 10px #218664, 0 0 15px #f50909, 0 0 10px #18ffba, 0 0 10px #18ffba, 0 0 20px #1ac7e6, 0 0 30px #18f7ff, 0 0 75px #18ffcd;
   
 }
