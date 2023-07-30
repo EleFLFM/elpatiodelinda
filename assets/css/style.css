@@ -18,12 +18,12 @@ body {
   background-image: url(../img/img_fondo.jpg);
   --color_border : rgba(73, 81, 82, 0.349);
   border: 7px solid var(--color_border);
+  backdrop-filter: blur(10px)!important;
 }
 
 
   .container_todo{
-    background:#ffffff05;
-  backdrop-filter: blur(10px)!important;
+  background:#ffffff05;
 }
 
 a {
