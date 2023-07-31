@@ -44,9 +44,6 @@ h6,
 .font-heading {
   font-family: "Raleway", sans-serif;
 }
-.section {
-  
-}
 
 .filters a {
   text-decoration: none;
@@ -55,17 +52,23 @@ h6,
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   position: relative;
 }
-
+.filters{
+  text-align: center;
+}
 .filters a:hover,
 .filters a:focus,
 .filters a:active {
-  text-decoration: none;
+  transition: .3s all ease-in-out;
+  border-radius: 40px;
+  /* background-color: #102324; */
+  color: #fcfcfc;
 }
 
-.filters a:hover:before {
+/* .filters a:hover:before {
   content: "";
   position: absolute;
   left: 10px;
@@ -73,13 +76,16 @@ h6,
   bottom: 0;
   height: 1px;
   background-color: #000;
-}
+} */
 
 .filters a.active {
-  color: #000;
+  color: #fcfcfc;
+  border-radius: 40px;
+  background-image: linear-gradient(80deg, #343c4e 0, #115f64 50%, #178866 100%);
+  /* background-color: #102324; */
 }
 
-.filters a.active:before {
+/* .filters a.active:before {
   content: "";
   position: absolute;
   left: 10px;
@@ -87,7 +93,7 @@ h6,
   bottom: 0;
   height: 1px;
   background-color: #000;
-}
+} */
 
 .site-portfolio .container h2{
 text-align: center;
