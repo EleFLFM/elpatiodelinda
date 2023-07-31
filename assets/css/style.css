@@ -149,9 +149,9 @@ text-transform: uppercase;
 }
 .work-info span{
   font-family: 'Lobster', cursive;
-  color: #0b1416d7;
+  color: #030303d7;
   font-weight: 100;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .item .item-wrap>.work-info span {
